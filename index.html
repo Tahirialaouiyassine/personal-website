@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/19a81377af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/yassine.png"  class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Engineer in Modeling and Scientific Computing</p>
+            <h1>Hello, my name is <span>Tahiri Alaoui Yassine</span>, <br> and I am from Morocco.</h1>
+        </div>
+    </div>
+</div>
+<!----------------about-------------------->
+<div class="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                 <img src="image/me3.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="paragraph">I am currently enrolled in the second year of Engineering in Modeling and Scientific Computing 
+                    at École Mohammadia d'Ingénieurs (EMI). I possess a strong foundation in data science, 
+                    encompassing areas such as machine learning, deep learning, computer vision, and time series analysis. 
+                    Proficient in Python libraries like scikit-learn, R, TensorFlow, Pandas, and NumPy.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Science </span><br>Maching learning,Deep learning Python ( sklearn ) , R</li>
+                            <li><span>Data Analytics</span><br>Python (Pandas , numpy),Timeseries</li>
+                            <li><span>Web Developpment</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jul 2023 - Aug 2023</span><br>My internship at the Regional Directorate of Agricultural Development in Tafilalet was very enriching. I explored agriculture, computer science, and machine learning, applying my knowledge to real-world problems. I successfully completed a plant classification project.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Mohammadia School of Engineering 2022-2025</span><br>2nd year in Modeling and Scientific Computing Engineering</li>
+                            <li><span>CPGE IBN TAHIR 2020-2022</span><br> Filiére: MP <br> Rang: 759</li>
+                            <li><span>IBN TAHIR High School 2019-2020</span><br>Filiére: Science Mathématiques Option A <br> Mention: Trés Bien</li>
+                        </ul>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------prjects---------------------------------------->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-code" style="color: #3e00fa;"></i>
+                <h2>Data Science</h2>
+                <p>Timeseries forecasting using RNN, LSTM and GRU
+                </p>
+                <a href="https://github.com/Tahirialaouiyassine/timeseriesforcasting/blob/main/timeseries_forecasting_using_RNN%2C_LSTM_and_GRU.ipynb" target="_blank">Learn more</a>
+            </div> 
+            <div>
+                <i class="fa-solid fa-code" style="color: #3e00fa;"></i>
+                <h2>Data Science</h2>
+                <p> Recommender System </p>
+                <a href="https://github.com/Tahirialaouiyassine/recommender-syst/blob/main/recommender_system.ipynb"  target="_blank">Learn more</a>
+            </div> 
+            <div>
+                <i class="fa-solid fa-database" style="color: #3e00fa;"></i>
+                <h2>Computer Vision</h2>
+                <p>Classification d'images avec des réseaux de neurones convolutifs
+                    (CNN)</p>
+                <a href="https://github.com/Tahirialaouiyassine/cnn-" target="_blank">Learn more</a>
+            </div> 
+            <div>
+                <i class="fa-brands fa-think-peaks" style="color: #3e00fa;"></i>
+                <h2>Optimization</h2>
+                <p> Optimization Multi-Objective Passing vehicle search</p>
+                <a href="https://optimiwation-website-iwxv.onrender.com/"  target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------Contact-------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> Tahiriyassin000@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> 0667294268</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100086034763635&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/tah_irialaouiyassine/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100086034763635&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/yassine-tahiri-alaoui-4a4a79292?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BviibLkcJRhKaqCUjJylHyQ%3D%3D" target="_blank" ><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="custom-button">
+                    <a href="CV.pdf" target="_blank" download>Download CV</a>
+                </div>               
+            </div>
+            <div class="contact-right">
+                <form action="https://formsubmit.co/tahiriyassin000@gmail.com" method="POST" >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email "required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="custom-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Yassine. Made by <i class="fa-sharp fa-solid fa-heart"></i> Tahiri Alaoui Yassine </p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>  
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right='0';
+    }
+    function closemenu(){
+        sidemenu.style.right='-200px';
+    }
+</script>
+</body>
+</html>
