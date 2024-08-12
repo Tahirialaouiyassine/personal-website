@@ -10,7 +10,7 @@ html{
 body{
     background: #080808;
     color:#fff;
-    background-image: url(image/backgroud.png);
+    background-image: url(backgroud.png);
     background-size: cover;
     background-position:center ;
 }
